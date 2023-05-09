@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+
+  <title>Age calculator app</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <link rel="stylesheet" href="main.css">
+  <style>
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+      margin: 35px 0 0;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+  </style>
+</head>
+
+<body>
+  <main>
+
+    <div class="calculator">
+      <div class="form">
+        <div class="form-group">
+          <label for="day">day</label>
+          <input required type="number" placeholder="DD" id="day" name="day" class="form-control">
+          <div class="error">day</div>
+        </div>
+        <div class="form-group">
+          <label for="year">month</label>
+          <input required type="number" placeholder="MM" id="month" name="month" class="form-control">
+          <div class="error">month</div>
+        </div>
+        <div class="form-group">
+          <label for="year">year</label>
+          <input required type="number" placeholder="YYYY" id="year" name="year" class="form-control">
+          <div class="error">year</div>
+        </div>
+      </div>
+      <div class="botton">
+        <div class="linea"></div>
+        <figure class="botton-img" onclick="calcular()">
+          <img src="icon-arrow.svg" alt="arrow" class="img">
+        </figure>
+      </div>
+      <div class="results">
+        <div class="year">
+          <span id="yearTotal">--</span> <h2>years</h2> 
+        </div>
+        <div class="month">
+          <span id="monthTotal">--</span> <h2>months</h2>
+        </div>
+        <div class="day">
+          <span id="dayTotal">--</span> <h2>days</h2>
+        </div>
+      </div>
+    </div>
+    </div>
+    
+  </main>
+
+  <footer>
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+      Coded by <a href="#">Jonathan Cabuyales Frontend Dev</a>.
+    </div>
+  </footer>
+
+
+  <script src="app.js"></script>
+</body>
+
+</html>
